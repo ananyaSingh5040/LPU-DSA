@@ -14,6 +14,7 @@ int sumOfDigits(int n) {
 int main()
 {
    int n;
+   cin>>n;
     cout<<"Sum of digits are: "<<sumOfDigits(n);
     return 0;
 }
