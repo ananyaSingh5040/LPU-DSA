@@ -14,7 +14,7 @@ int squareRootInt(int n)
     //         break;
     //     }
     // }
-    int low = 0;
+    int low = 1;
     int high = n - 1;
     while(low <= high)
     {
