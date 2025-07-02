@@ -1,4 +1,4 @@
-
+// All the elements before the pivot is smaller than two
 #include <bits/stdc++.h>
 using namespace std;
 void quickSort (vector<int> &arr)
