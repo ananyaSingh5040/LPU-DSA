@@ -3,6 +3,7 @@
 using namespace std;
 void quickSort (int low, int high)
 {
+    if(low >= high)
 
 }
 int main()
