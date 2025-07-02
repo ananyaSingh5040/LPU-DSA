@@ -13,7 +13,7 @@ void yadaYada(vector<int> arr)
     vector<int> even;
     vector<int> odd;
     vector<int> result;
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++) 
     {
         if (arr[i] % 2 == 0)
             even.push_back(arr[i]);
