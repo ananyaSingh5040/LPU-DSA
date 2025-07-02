@@ -3,6 +3,8 @@
 using namespace std;
 void quickSort(int low, int high)
 {
+    // when there is no element in the array.
+    
     if (low >= high)
         return;
 }
