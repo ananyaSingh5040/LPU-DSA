@@ -1,10 +1,10 @@
 // All the elements before the pivot are smaller than pivot and all the elements after the pivot are greater than pivot.
 #include <bits/stdc++.h>
 using namespace std;
-void quickSort (int low, int high)
+void quickSort(int low, int high)
 {
-    if(low >= high)
-
+    if (low >= high)
+        return;
 }
 int main()
 {
