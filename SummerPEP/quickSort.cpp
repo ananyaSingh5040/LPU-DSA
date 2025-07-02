@@ -4,7 +4,7 @@ using namespace std;
 void quickSort(int low, int high)
 {
     // when there is no element in the array.
-    
+    // This would happen when the low is at correct position
     if (low >= high)
         return;
 }
