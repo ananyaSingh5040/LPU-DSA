@@ -64,6 +64,16 @@ int middleNode(Node* &head)
     return slow->data;
 
 }
+Node* nthNode(Node* &head)
+{
+    if(head == NULL) return head;
+    Node* temp = head;
+    while(temp->next!=NULL)
+    {
+        temp = temp->next;
+    }
+    return temp;
+}
 int main()
 {
     Node* head = NULL;
@@ -77,7 +87,8 @@ int main()
     cout<<"Number of nodes: "<<numberOfNodes(head)<<endl;
     int val = 10;
     NodeSearch(head, val) ? cout<<"The node was found"<<endl : cout<<"The node was not present"<<endl;
-    cout<<"The middle node is: "<<middleNode(head);
+    cout<<"The middle node is: "<<middleNode(head)<<endl;
+    cout<<"Nth Node of this Linked list is :"<<nthNode(head)->data;
     
     return 0;
 }
