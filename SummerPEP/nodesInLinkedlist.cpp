@@ -74,6 +74,38 @@ Node* nthNode(Node* &head)
     }
     return temp;
 }
+void AddAtIndex(Node* &head, int index, int val)
+{
+    Node* temp = head;
+    int count = 0;
+    if(index == 0)
+    {
+        Node* newNode = new Node(val);
+        head = newNode;
+    }
+    while(count < index)
+    {
+        temp = temp->next;
+        count++;
+    }
+    Node* newNode = new Node(val);
+    newNode->next = temp->next->next;
+    temp->next = newNode;
+}
+void reverseLL(Node* &head)
+{
+    Node* curr = head;
+    Node* prev = NULL;
+    while(curr != NULL)
+    {
+        Node* save = curr->next;
+        curr->next = prev;
+        prev = curr;
+        curr= save;
+    }
+    head = prev;
+
+}
 int main()
 {
     Node* head = NULL;
