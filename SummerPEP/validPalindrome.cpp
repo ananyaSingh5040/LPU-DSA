@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-void isPalindrome(string s) {
+bool isPalindrome(string s) {
 
 
         for(int ch = 0; ch < s.length(); ch++)
@@ -14,13 +14,15 @@ void isPalindrome(string s) {
             if(s[ch] >= 'a' && s[ch] <= 'z')
             st += s[ch];
         }
-        cout<<st;
-        
+       if(st == s)
+       return true;
+       else
+       return false;        
         
     }
 int main()
 {
     string s = "Aman,aplanacanal: Panama";
-    isPalindrome(s);
+    cout<<isPalindrome(s);
     return 0;
 }
