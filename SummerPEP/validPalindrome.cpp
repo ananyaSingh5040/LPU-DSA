@@ -8,7 +8,7 @@ void isPalindrome(string s) {
             if(s[ch] >= 'A' && s[ch] <='Z')
             {
                 s[ch] = s[ch] - 'a';
-                cout<<s[ch];
+                cout<<ch;
             }
         }
         
