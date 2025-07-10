@@ -3,14 +3,12 @@ using namespace std;
 void isPalindrome(string s) {
 
 
-        for(char ch: s)
-        {
-            if(s[ch] >= 'A' && s[ch] <='Z')
-            {
-                s[ch] = s[ch] - 'a';
-                cout<<ch;
-            }
-        }
+        for(int ch = 0; ch < s.length(); ch++)
+      {
+        if(s[ch] >= 'A' && s[ch] <= 'Z')
+            s[ch] = s[ch] - 'A' + 'a';
+      }
+      cout<<s;
         
         
     }
