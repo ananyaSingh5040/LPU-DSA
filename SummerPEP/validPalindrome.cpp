@@ -14,7 +14,7 @@ void isPalindrome(string s) {
     }
 int main()
 {
-    string s = "AmanaplanacanalPanama";
+    string s = "Aman,aplanacanalPanama";
     isPalindrome(s);
     return 0;
 }
