@@ -20,7 +20,7 @@ void isPalindrome(string s) {
     }
 int main()
 {
-    string s = "Aman,aplanacanalPanama";
+    string s = "Aman,aplanacanal: Panama";
     isPalindrome(s);
     return 0;
 }
