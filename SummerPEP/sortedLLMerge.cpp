@@ -31,20 +31,22 @@ void sortedLL(Node *&head1, Node *&head2)
 {
     Node *temp1 = head1;
     Node *temp2 = head2;
-    Node* tracker1 = head1;
-    Node* tracker2 = head2;
+    Node *tracker1 = head1;
+    Node *tracker2 = head2;
     while (temp1 != NULL && temp2 != NULL)
     {
-        if(tracker1->data < tracker2->data)
+        if (tracker1->data < tracker2->data)
         {
             temp1 = temp1->next;
         }
-        else{
-            tracker1->next = tracker2;
+        else
+        {
+            tracker2= tracker2->next;
             temp2->next = temp1;
-        
+            tracker1->next = temp2;
+            tracker1 = temp1;
+            temp2 = tracker2;
         }
-        temp2 = temp2->next;
     }
 }
 
